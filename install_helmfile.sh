@@ -1,10 +1,11 @@
+#!/usr/bin/env bash
+
 HELMFILE_VERSION=v0.20.0
 HELMFILE_DOWNLOADED_FILENAME=helmfile_linux_amd64
 HURL=https://github.com/roboll/helmfile/releases/download
 HELMFILE_URL=${HURL}/${HELMFILE_VERSION}/${HELMFILE_DOWNLOADED_FILENAME}
 HELMFILE_BIN=helmfile
-
-function install_helmfile {
+install_helmfile() {
 
     if [ -z $(which $HELMFILE_BIN) ]
        then
@@ -16,5 +17,6 @@ function install_helmfile {
     else
        echo "Helmfile is most likely installed"
     fi
-
 }
+
+install_helmfile
