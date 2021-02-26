@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-HELMFILE_VERSION=v0.20.0
+HELMFILE_VERSION=v0.138.4
 HELMFILE_DOWNLOADED_FILENAME=helmfile_linux_amd64
 HURL=https://github.com/roboll/helmfile/releases/download
 HELMFILE_URL=${HURL}/${HELMFILE_VERSION}/${HELMFILE_DOWNLOADED_FILENAME}
